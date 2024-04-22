@@ -1,0 +1,582 @@
+/* Resetting default styles */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: radial-gradient(circle, #1a1a1a, black);
+    overflow: scroll; /* Hide overflow to prevent scrolling */
+}
+
+
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.section {
+    padding: 50px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+    position: relative;
+}
+
+/* Add animation for image border */
+@keyframes borderAnimation {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.home img {
+    position: absolute;
+    top: 200%;
+    right: 120%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    border-radius: 18% 70% 34% 48%; /* Adjust border-radius values to create the custom shape */    
+    box-shadow: 
+        0 0 0 10px rgba(0, 0, 0, 0.2), /* Outer shadow */
+        0 0 0 20px rgba(0, 0, 0, 0.4), /* Middle shadow */
+        0 0 0 30px rgba(0, 0, 0, 0.6); /* Inner shadow */
+    animation: pulse 2s infinite alternate, borderAnimation 4s infinite; /* Add animation */
+}
+
+
+
+.home .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: calc(100% - 280px);
+}
+
+.home .content p {
+    font-size: 18px;
+    color:white;
+    margin-top: 20px;
+}
+
+.home .text {
+    margin-left: 20px;
+}
+
+.home .text h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color:white;
+    margin-bottom: 10px;
+}
+
+/* Add animation for individual letter zoom */
+@keyframes zoom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/*this is for animation zoom in zoom out paragraph*/
+
+/* Apply animation to each letter */
+.home .text h2 span {
+    display: inline-block;
+    margin-right: 5px; /* Adjust as needed */
+}
+
+/* Apply animation to each letter */
+.home .text h2 span {
+    animation: zoom 1s infinite alternate;
+}
+
+/* Delay each letter's animation */
+.home .text h2 span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.home .text h2 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.home .text h2 span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.home .text h2 span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.home .text h2 span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.home .text h2 span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.home .text h2 span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.home .text h2 span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.home .text h2 span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.home .text h2 span:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.home .text h2 span:nth-child(11) {
+    animation-delay: 1.1s;
+}
+
+.home .text h2 span:nth-child(12) {
+    animation-delay: 1.2s;
+}
+
+.home .text h2 span:nth-child(13) {
+    animation-delay: 1.3s;
+}
+
+.home .text h2 span:nth-child(14) {
+    animation-delay: 1.4s;
+}
+
+.home .text h2 span:nth-child(15) {
+    animation-delay: 1.5s;
+}
+
+.home .text h2 span:nth-child(16) {
+    animation-delay: 1.6s;
+}
+
+.home .text h2 span:nth-child(17) {
+    animation-delay: 1.7s;
+}
+
+.home .text h2 span:nth-child(18) {
+    animation-delay: 1.8s;
+}
+
+.home .text h2 span:nth-child(19) {
+    animation-delay: 1.9s;
+}
+
+.home .text h2 span:nth-child(20) {
+    animation-delay: 2s;
+}
+
+
+
+.home .text p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Add button styles */
+.custom-button {
+    position: absolute;
+    top: 80%;
+    bottom: -35%;
+    right: 95%;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* Remove border */
+}
+  
+.custom-button img {
+    vertical-align: middle;
+}
+
+
+.custom-button1{
+    position: absolute;
+    top: 80%;
+    bottom: -35%;
+    right: 90%;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* Remove border */
+}
+  
+.custom-button img {
+    vertical-align: middle;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.content_p {
+    padding: 50px;
+    position: absolute;
+    right: 200px;
+    left: 35%;
+    top: 30%;
+    border: 1px solid transparent; /* Add border initially */
+    border-radius: 50px; /* Add border radius */
+    transition: transform 0.3s, border-color 0.3s; /* Add transition */
+    box-shadow: 10 500px 500px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+
+
+.content_p p {
+    font-size: 15px;
+    color: white;
+    background-color:transparent;
+    margin-top: 2px;
+    border-radius: 5px;
+    transition: transform 0.3s, border-color 0.3s; /* Add transition */
+}
+
+.content_p:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    border-color: #ccc; /* Change border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+.content_p p:hover {
+  
+    border-color: #ccc; /* Change border color on hover */
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.aboutme {
+    position: absolute;
+    padding: 50px;
+    background-color: transparent;
+    color: white;
+    margin-top: 0; /* Baguhin ang margin-top sa 0 */
+    margin-bottom: 50px; /* Idagdag ang margin-bottom na magbibigay ng espasyo sa ibaba */
+    top: 130%;
+    right: 50%;
+ 
+  }
+  
+  .aboutme .sidebar {
+    margin-top: 30px;
+  }
+  
+  .aboutme h1 {
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    bottom:25%; /* Dagdagan ang margin sa ibaba */
+    top: -110%;
+    right: 73%;
+  
+   
+  }
+
+ .aboutme p {
+   
+    position: absolute;
+    right: -25%;
+    top: -50%;
+    max-width: 800  px; /* I-adjust ang max-width base sa preference */
+    margin: 0 auto; /* I-center ang element */
+   
+    
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.title
+{
+    position: absolute;
+    top: 180%;
+    right: 76%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Itago ang mga hidden-content sections sa simula */
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Hide hidden content initially */
+.hidden-content {
+    display: none;
+    position: absolute;
+    width: 450px;
+    height: 70px;
+    right: 48%;
+    bottom: -60%;
+}
+
+
+/* Style toggle buttons */
+.toggle-button {
+    padding: 10px 20px;
+    margin: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:grey;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+    transition: 1s;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#csharp {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    position: absolute;
+    right: 45%;
+    overflow: hidden;
+    transition: border-color 0.3s; 
+    position: absolute;
+    top: 200%;
+    right: 70%;
+}
+
+.category-content1 {
+    padding: 10px;
+    transition: background-color 0.3s; 
+}
+
+.category-content1 p {
+    color: white; 
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.category-content1:hover {
+  
+    animation: pulse 1s infinite alternate; 
+}
+
+.category-content1 p:hover {
+    transform: scale(1.1) italic; 
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#Python {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    position: absolute;
+    right: 45%;
+    overflow: hidden;
+    transition: border-color 0.3s; 
+    position: absolute;
+    top: 202%;
+    right: 46%;
+}
+
+.category-content2 {
+    padding: 10px;
+    transition: background-color 0.3s; 
+}
+
+.category-content2 p {
+    color: white; 
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.category-content2:hover {
+  
+    animation: pulse 1s infinite alternate; 
+}
+
+.category-content2 p:hover {
+    transform: scale(1.1) italic; 
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#html {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    position: absolute;
+    right: 45%;
+    overflow: hidden;
+    transition: border-color 0.3s; 
+    position: absolute;
+    top: 201%;
+    right:18%;
+}
+
+.category-content3 {
+    padding: 10px;
+    transition: background-color 0.3s; 
+}
+
+.category-content3 p {
+    color: white; 
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.category-content3:hover {
+  
+    animation: pulse 1s infinite alternate; 
+}
+
+.category-content3 p:hover {
+    transform: scale(1.1) italic; 
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+
+  
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
